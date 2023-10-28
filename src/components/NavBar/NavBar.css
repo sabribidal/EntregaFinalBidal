@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cedarville+Cursive&display=swap');
+
+.NavBar{
+    background-color: white;
+}
+.pages{
+    flex-grow: inherit;
+    justify-content: center;
+}
+a.Option{
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+.branch{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 40px;
+}
+.branch a{
+    color: black;
+    text-decoration: none;
+}

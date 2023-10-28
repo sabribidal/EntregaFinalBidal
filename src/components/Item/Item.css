@@ -1,0 +1,10 @@
+.CardItem{
+    display: flex; flex-direction: column; align-items: center;
+    background-color: pink;
+    width: 200px;
+    margin: 20px;
+}
+.ItemImg{
+    width: auto;
+    height: 200px;
+}
