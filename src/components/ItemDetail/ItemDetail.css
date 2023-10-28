@@ -1,0 +1,51 @@
+.item-article {
+    background-color: #ffffff;
+    border: 1px solid #616161;
+    border-radius: 15px;
+    width: 300px;
+    margin: 5px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+}
+
+.item-header {
+    padding: 10px;
+    text-align: center;
+}
+
+.item-title {
+    margin: 0;
+    font-size: 25px;
+    color: #000000;
+}
+
+.item-picture {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.item-image {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;   
+}
+
+.item-section {
+    padding: 10px;
+}
+
+.item-categoria,.item-descripcion,.item-precio {
+    margin: 8px 0;
+    color: #000000;
+    font-size: 16px;
+}
+
+.item-footer {
+    padding: 10px;
+    text-align: center;
+}
+
+.item-count {
+    display: inline-block;
+}

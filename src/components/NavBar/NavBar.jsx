@@ -14,9 +14,9 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='pages'>
-          <NavLink to={`/category/green`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>green</NavLink>
-          <NavLink to={`/category/black`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>black</NavLink>
-          <NavLink to={`/category/blue`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>blue</NavLink>
+          <NavLink to={`/category/te`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Te</NavLink>
+          <NavLink to={`/category/mate`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Mate</NavLink>
+          <NavLink to={`/category/accesorios`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Accesorios</NavLink>
         </Navbar.Collapse>
         <NavLink to='/cart'><CartWidget/></NavLink>
       </Container>

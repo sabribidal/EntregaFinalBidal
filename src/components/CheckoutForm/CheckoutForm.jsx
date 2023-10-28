@@ -1,55 +1,63 @@
 import { useState } from "react";
+import './CheckoutForm.css';
 
 const CheckoutForm = ({onConfirm}) => {
-    const [name, setName] = useState('');
-    const [phone, setPhone] = useState('');
-    const [email, setEmail] = useState('');
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
 
     const handleConfirm = (event) => {
-        event.preventDefault();
+        event.preventDefault()
 
         const userData = {
-            name,
-            phone,
-            email
-        };
+            name, email, phone
+        }
 
-        onConfirm(userData);
+        onConfirm(userData)
     }
 
     return(
-        <div>
-            <form onSubmit={handleConfirm}>
-                <label>
-                    Nombre
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={({target}) => setName(target.value)}
-                    />
-                </label>
-                <label>
-                    Teléfono
-                    <input
-                        type="text"
-                        value={phone}
-                        onChange={({target}) => setPhone(target.value)}
-                    />
-                </label>
-                <label>
-                    Email
-                    <input
-                        type="email"
-                        value={email}
-                        onChange={({target}) => setEmail(target.value)}
-                    />
-                </label>
-                <div>
-                    <button type="submit">Crear Orden</button>
-                </div>
-            </form>
-        </div>
+    <form onSubmit={handleConfirm} className="checkout-form">
+      <div className="input-group">
+        <label className="input-label">Nombre</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          value={name} 
+          onChange={({target}) => setName(target.value)} 
+          required 
+          className="input-field"
+        />
+      </div>
+      <div className="input-group">
+        <label className="input-label">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          value={email} 
+          onChange={({target}) => setEmail(target.value)} 
+          required 
+          className="input-field"
+        />
+      </div>
+      <div className="input-group">
+        <label className="input-label">Telefono</label>
+        <input 
+          type="tel" 
+          id="phone" 
+          name="phone" 
+          value={phone} 
+          onChange={({target}) => setPhone(target.value)} 
+          required 
+          className="input-field"
+        />
+      </div>
+      <button type="submit" className="submit-button">Submit</button>
+    </form>
     )
+
 }
 
 export default CheckoutForm;
